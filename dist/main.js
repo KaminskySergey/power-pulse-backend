@@ -11,7 +11,7 @@ async function bootstrap() {
     app.use(bodyParser.json({ limit: '10mb' }));
     app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
     app.enableCors({
-        origin: ['http://localhost:3000'],
+        origin: ['https://power-pulse-backend-uy3b.onrender.com'],
         credentials: true,
         exposedHeaders: 'set-cookie',
     });
