@@ -10,7 +10,7 @@ exports.ExercisesModule = void 0;
 const common_1 = require("@nestjs/common");
 const exercises_service_1 = require("./exercises.service");
 const exercises_controller_1 = require("./exercises.controller");
-const prisma_service_1 = require("../prisma.service");
+const prisma_service_1 = require("../prisma/prisma.service");
 const pagination_service_1 = require("../pagination/pagination.service");
 let ExercisesModule = class ExercisesModule {
 };

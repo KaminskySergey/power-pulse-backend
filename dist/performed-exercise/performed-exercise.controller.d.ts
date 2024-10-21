@@ -5,6 +5,17 @@ export declare class PerformedExerciseController {
     private readonly performedExerciseService;
     readonly profileService: ProfileService;
     constructor(performedExerciseService: PerformedExerciseService, profileService: ProfileService);
-    createConsumedProduct(data: CreatePerformedExerciseDto, id: string): unknown;
-    deleteConsumedProduct(id: string): unknown;
+    createConsumedProduct(data: CreatePerformedExerciseDto, id: string): Promise<{
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        date: Date;
+        time: number;
+        calories: number;
+        profileId: string;
+        exerciseId: string;
+    }>;
+    deleteConsumedProduct(id: string): Promise<{
+        data: string;
+    }>;
 }

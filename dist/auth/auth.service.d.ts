@@ -10,9 +10,40 @@ export declare class AuthService {
     constructor(jwt: JwtService, userService: UserService, profileService: ProfileService);
     EXPIRE_DAY_REFRESH_TOKEN: number;
     REFRESH_TOKEN_NAME: string;
-    login(dto: AuthDto): unknown;
-    register(dto: AuthDtoRegister): unknown;
-    getNewTokens(refreshToken: string): unknown;
+    login(dto: AuthDto): Promise<{
+        accessToken: string;
+        refreshToken: string;
+        user: {
+            avatarPath: string;
+            id: string;
+            createdAt: Date;
+            updatedAt: Date;
+            email: string;
+            name: string;
+        };
+    }>;
+    register(dto: AuthDtoRegister): Promise<{
+        accessToken: string;
+        refreshToken: string;
+        user: {
+            id: string;
+            createdAt: Date;
+            updatedAt: Date;
+            email: string;
+            name: string;
+            avatarPath: string;
+        };
+    }>;
+    getNewTokens(refreshToken: string): Promise<{
+        accessToken: string;
+        refreshToken: string;
+        user: {
+            id: string;
+            email: string;
+            name: string;
+            avatarPath: string;
+        };
+    }>;
     private returnUserFields;
     private issueTokens;
     private validateUser;

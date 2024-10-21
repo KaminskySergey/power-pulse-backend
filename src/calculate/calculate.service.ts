@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { LevelActivity } from '@prisma/client';
 import { DailyActivitiesService } from 'src/daily-activities/daily-activities.service';
-import { PrismaService } from 'src/prisma.service';
+import { PrismaService } from 'src/prisma/prisma.service';
 import { CalculateDto } from './dto/calculate.dto';
 
 @Injectable()

@@ -1,5 +1,5 @@
 import { DailyActivitiesService } from 'src/daily-activities/daily-activities.service';
-import { PrismaService } from 'src/prisma.service';
+import { PrismaService } from 'src/prisma/prisma.service';
 export declare class CalculateService {
     readonly prisma: PrismaService;
     readonly dailyActivitiesService: DailyActivitiesService;

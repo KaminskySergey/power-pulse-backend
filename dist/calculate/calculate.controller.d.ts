@@ -7,6 +7,15 @@ export declare class CalculateController {
     readonly profileService: ProfileService;
     readonly dailyActivitiesService: DailyActivitiesService;
     constructor(calculateService: CalculateService, profileService: ProfileService, dailyActivitiesService: DailyActivitiesService);
-    getCalculateBmr(id: string): unknown;
-    getCurrentDay(query: CalculateDto, id: string): unknown;
+    getCalculateBmr(id: string): Promise<{
+        profileId: string;
+        dailyCalories: number;
+        exerciseTime: number;
+    }>;
+    getCurrentDay(query: CalculateDto, id: string): Promise<{
+        caloriesConsumed: number;
+        caloriesBurned: number;
+        caloriesRemaining: number;
+        exerciseTimeRemaining: number;
+    }>;
 }

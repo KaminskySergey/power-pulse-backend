@@ -1,4 +1,4 @@
-import { PrismaService } from 'src/prisma.service';
+import { PrismaService } from 'src/prisma/prisma.service';
 export declare class DailyActivitiesService {
     readonly prisma: PrismaService;
     constructor(prisma: PrismaService);

@@ -1,1 +1,1 @@
-export declare const Auth: () => any;
+export declare const Auth: () => MethodDecorator & ClassDecorator;

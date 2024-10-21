@@ -8,7 +8,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DailyActivitiesDto = void 0;
 const class_transformer_1 = require("class-transformer");
@@ -22,6 +21,6 @@ __decorate([
         return new Date(Date.UTC(year, month - 1, day));
     }),
     (0, class_validator_1.IsDate)(),
-    __metadata("design:type", typeof (_a = typeof Date !== "undefined" && Date) === "function" ? _a : Object)
+    __metadata("design:type", Date)
 ], DailyActivitiesDto.prototype, "date", void 0);
 //# sourceMappingURL=daily-activities.dto.js.map

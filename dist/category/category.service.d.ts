@@ -1,7 +1,13 @@
-import { PrismaService } from 'src/prisma.service';
+import { PrismaService } from 'src/prisma/prisma.service';
 export declare class CategoryService {
     readonly prisma: PrismaService;
     constructor(prisma: PrismaService);
-    getAll(): unknown;
-    create(): any;
+    getAll(): Promise<{
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        slug: string;
+        name: string;
+    }[]>;
+    create(): Promise<void>;
 }

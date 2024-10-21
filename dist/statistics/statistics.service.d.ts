@@ -1,8 +1,14 @@
-import { PrismaService } from 'src/prisma.service';
+import { PrismaService } from 'src/prisma/prisma.service';
 export declare class StatisticsService {
     readonly prisma: PrismaService;
     constructor(prisma: PrismaService);
-    getAllInfo(): unknown;
+    getAllInfo(): Promise<{
+        totalVideoWorkouts: number;
+        totalCaloriesBurned: number;
+        totalUsers: number;
+        totalHoursSpent: number;
+        totalWorkoutsCompleted: number;
+    }>;
     private getAllVideo;
     private getAllUser;
     private getTotalCaloriesBurned;

@@ -8,7 +8,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var _a, _b, _c, _d;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UpdateProfileDto = void 0;
 const class_validator_1 = require("class-validator");
@@ -53,21 +52,21 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsDate)(),
     (0, class_transformer_1.Type)(() => Date),
-    __metadata("design:type", typeof (_a = typeof Date !== "undefined" && Date) === "function" ? _a : Object)
+    __metadata("design:type", Date)
 ], UpdateProfileDto.prototype, "birthday", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsEnum)(client_1.Blood),
-    __metadata("design:type", typeof (_b = typeof client_1.Blood !== "undefined" && client_1.Blood) === "function" ? _b : Object)
+    __metadata("design:type", String)
 ], UpdateProfileDto.prototype, "blood", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsEnum)(client_1.Sex),
-    __metadata("design:type", typeof (_c = typeof client_1.Sex !== "undefined" && client_1.Sex) === "function" ? _c : Object)
+    __metadata("design:type", String)
 ], UpdateProfileDto.prototype, "sex", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsEnum)(client_1.LevelActivity),
-    __metadata("design:type", typeof (_d = typeof client_1.LevelActivity !== "undefined" && client_1.LevelActivity) === "function" ? _d : Object)
+    __metadata("design:type", String)
 ], UpdateProfileDto.prototype, "levelActivity", void 0);
 //# sourceMappingURL=update-profile.dto.js.map

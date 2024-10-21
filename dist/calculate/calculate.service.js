@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.CalculateService = void 0;
 const common_1 = require("@nestjs/common");
 const daily_activities_service_1 = require("../daily-activities/daily-activities.service");
-const prisma_service_1 = require("../prisma.service");
+const prisma_service_1 = require("../prisma/prisma.service");
 let CalculateService = class CalculateService {
     constructor(prisma, dailyActivitiesService) {
         this.prisma = prisma;

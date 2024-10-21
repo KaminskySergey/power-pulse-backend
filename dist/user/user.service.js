@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserService = void 0;
 const common_1 = require("@nestjs/common");
 const argon2_1 = require("argon2");
-const prisma_service_1 = require("../prisma.service");
+const prisma_service_1 = require("../prisma/prisma.service");
 const profile_service_1 = require("../profile/profile.service");
 let UserService = class UserService {
     constructor(prisma, profileService) {
