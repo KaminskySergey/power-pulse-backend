@@ -10,7 +10,6 @@ import { PaginationModule } from './pagination/pagination.module';
 import { CategoryModule } from './category/category.module';
 import { ExercisesModule } from './exercises/exercises.module';
 import { LookupModule } from './lookup/lookup.module';
-import { ConsumedProductService } from './consumed-product/consumed-product.service';
 import { ConsumedProductModule } from './consumed-product/consumed-product.module';
 import { PerformedExerciseModule } from './performed-exercise/performed-exercise.module';
 import { DailyActivitiesModule } from './daily-activities/daily-activities.module';
