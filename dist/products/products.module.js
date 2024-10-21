@@ -10,9 +10,9 @@ exports.ProductsModule = void 0;
 const common_1 = require("@nestjs/common");
 const products_service_1 = require("./products.service");
 const products_controller_1 = require("./products.controller");
-const prisma_service_1 = require("../prisma/prisma.service");
 const pagination_service_1 = require("../pagination/pagination.service");
 const profile_service_1 = require("../profile/profile.service");
+const prisma_service_1 = require("../prisma.service");
 let ProductsModule = class ProductsModule {
 };
 exports.ProductsModule = ProductsModule;

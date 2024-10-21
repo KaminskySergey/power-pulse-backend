@@ -10,7 +10,7 @@ exports.StatisticsModule = void 0;
 const common_1 = require("@nestjs/common");
 const statistics_service_1 = require("./statistics.service");
 const statistics_controller_1 = require("./statistics.controller");
-const prisma_service_1 = require("../prisma/prisma.service");
+const prisma_service_1 = require("../prisma.service");
 let StatisticsModule = class StatisticsModule {
 };
 exports.StatisticsModule = StatisticsModule;

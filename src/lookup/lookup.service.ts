@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { PrismaService } from 'src/prisma/prisma.service';
 import { CreateLookupDto } from './dto/create-lookup.dto';
 import { PaginationService } from 'src/pagination/pagination.service';
+import { PrismaService } from 'src/prisma.service';
 
 @Injectable()
 export class LookupService {

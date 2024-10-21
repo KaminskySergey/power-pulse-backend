@@ -10,8 +10,8 @@ exports.LookupModule = void 0;
 const common_1 = require("@nestjs/common");
 const lookup_service_1 = require("./lookup.service");
 const lookup_controller_1 = require("./lookup.controller");
-const prisma_service_1 = require("../prisma/prisma.service");
 const pagination_service_1 = require("../pagination/pagination.service");
+const prisma_service_1 = require("../prisma.service");
 let LookupModule = class LookupModule {
 };
 exports.LookupModule = LookupModule;

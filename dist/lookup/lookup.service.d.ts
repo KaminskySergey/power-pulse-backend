@@ -1,6 +1,6 @@
-import { PrismaService } from 'src/prisma/prisma.service';
 import { CreateLookupDto } from './dto/create-lookup.dto';
 import { PaginationService } from 'src/pagination/pagination.service';
+import { PrismaService } from 'src/prisma.service';
 export declare class LookupService {
     readonly prisma: PrismaService;
     readonly paginationService: PaginationService;

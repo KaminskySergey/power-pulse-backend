@@ -1,5 +1,5 @@
-import { PrismaService } from 'src/prisma/prisma.service';
 import { CreatePerformedExerciseDto } from './dto/create-performed-exercise.dto';
+import { PrismaService } from 'src/prisma.service';
 export declare class PerformedExerciseService {
     readonly prisma: PrismaService;
     constructor(prisma: PrismaService);

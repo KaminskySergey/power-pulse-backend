@@ -11,8 +11,8 @@ const common_1 = require("@nestjs/common");
 const calculate_service_1 = require("./calculate.service");
 const calculate_controller_1 = require("./calculate.controller");
 const profile_service_1 = require("../profile/profile.service");
-const prisma_service_1 = require("../prisma/prisma.service");
 const daily_activities_service_1 = require("../daily-activities/daily-activities.service");
+const prisma_service_1 = require("../prisma.service");
 let CalculateModule = class CalculateModule {
 };
 exports.CalculateModule = CalculateModule;

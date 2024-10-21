@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { PrismaService } from 'src/prisma/prisma.service';
 import { CreatePerformedExerciseDto } from './dto/create-performed-exercise.dto';
+import { PrismaService } from 'src/prisma.service';
 
 @Injectable()
 export class PerformedExerciseService {

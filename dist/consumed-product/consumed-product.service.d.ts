@@ -1,5 +1,5 @@
-import { PrismaService } from 'src/prisma/prisma.service';
 import { CreateConsumendProductDto } from './dto/create-consumend-product.dto';
+import { PrismaService } from 'src/prisma.service';
 export declare class ConsumedProductService {
     readonly prisma: PrismaService;
     constructor(prisma: PrismaService);

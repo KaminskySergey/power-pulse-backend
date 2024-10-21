@@ -1,7 +1,7 @@
 import { ProductDto } from './dto/create-product.dto';
-import { PrismaService } from 'src/prisma/prisma.service';
 import { PaginationService } from 'src/pagination/pagination.service';
 import { Prisma } from '@prisma/client';
+import { PrismaService } from 'src/prisma.service';
 export declare class ProductsService {
     readonly prisma: PrismaService;
     readonly paginationService: PaginationService;

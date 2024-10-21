@@ -1,6 +1,6 @@
-import { PrismaService } from 'src/prisma/prisma.service';
 import { CreateProfileDto } from './dto/create-profile.dto';
 import { UpdateProfileDto } from './dto/update-profile.dto';
+import { PrismaService } from 'src/prisma.service';
 export declare class ProfileService {
     private readonly prisma;
     constructor(prisma: PrismaService);

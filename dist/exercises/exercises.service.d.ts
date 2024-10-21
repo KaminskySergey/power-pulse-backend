@@ -1,6 +1,6 @@
-import { PrismaService } from 'src/prisma/prisma.service';
 import { ExercisesDto } from './dto/exercises.dto';
 import { PaginationService } from 'src/pagination/pagination.service';
+import { PrismaService } from 'src/prisma.service';
 export declare class ExercisesService {
     readonly prisma: PrismaService;
     readonly paginationService: PaginationService;

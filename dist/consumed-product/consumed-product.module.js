@@ -10,8 +10,8 @@ exports.ConsumedProductModule = void 0;
 const common_1 = require("@nestjs/common");
 const consumed_product_service_1 = require("./consumed-product.service");
 const consumed_product_controller_1 = require("./consumed-product.controller");
-const prisma_service_1 = require("../prisma/prisma.service");
 const profile_service_1 = require("../profile/profile.service");
+const prisma_service_1 = require("../prisma.service");
 let ConsumedProductModule = class ConsumedProductModule {
 };
 exports.ConsumedProductModule = ConsumedProductModule;

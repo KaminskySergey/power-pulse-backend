@@ -10,8 +10,8 @@ exports.UserModule = void 0;
 const common_1 = require("@nestjs/common");
 const user_service_1 = require("./user.service");
 const user_controller_1 = require("./user.controller");
-const prisma_service_1 = require("../prisma/prisma.service");
 const profile_service_1 = require("../profile/profile.service");
+const prisma_service_1 = require("../prisma.service");
 let UserModule = class UserModule {
 };
 exports.UserModule = UserModule;

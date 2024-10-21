@@ -1,5 +1,5 @@
 import { AuthDtoRegister } from 'src/auth/dto/auth.dto';
-import { PrismaService } from 'src/prisma/prisma.service';
+import { PrismaService } from 'src/prisma.service';
 import { ProfileService } from 'src/profile/profile.service';
 export declare class UserService {
     private prisma;
