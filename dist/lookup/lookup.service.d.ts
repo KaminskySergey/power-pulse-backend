@@ -5,16 +5,6 @@ export declare class LookupService {
     readonly prisma: PrismaService;
     readonly paginationService: PaginationService;
     constructor(prisma: PrismaService, paginationService: PaginationService);
-    getAll(dto: CreateLookupDto): Promise<{
-        lookups: {
-            id: string;
-            createdAt: Date;
-            updatedAt: Date;
-            filter: string;
-            name: string;
-            imgURL: string;
-        }[];
-        page: number;
-    }>;
-    importLookup(data: any): Promise<void>;
+    getAll(dto: CreateLookupDto): unknown;
+    importLookup(data: any): any;
 }

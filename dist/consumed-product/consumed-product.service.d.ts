@@ -3,17 +3,6 @@ import { CreateConsumendProductDto } from './dto/create-consumend-product.dto';
 export declare class ConsumedProductService {
     readonly prisma: PrismaService;
     constructor(prisma: PrismaService);
-    createConsumedProduct(dto: CreateConsumendProductDto, profileId: string): Promise<{
-        id: string;
-        createdAt: Date;
-        updatedAt: Date;
-        date: Date;
-        amount: number;
-        calories: number;
-        profileId: string;
-        productId: string;
-    }>;
-    delete(id: string, date: string): Promise<{
-        data: string;
-    }>;
+    createConsumedProduct(dto: CreateConsumendProductDto, profileId: string): unknown;
+    delete(id: string, date: string): unknown;
 }
