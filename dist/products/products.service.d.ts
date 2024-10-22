@@ -22,6 +22,7 @@ export declare class ProductsService {
         length: number;
     }>;
     importFoods(data: any): Promise<void>;
+    deleteAllFoods(): Promise<void>;
     private createFilter;
     private getSearchTermFilter;
     private getCategoryFilter;

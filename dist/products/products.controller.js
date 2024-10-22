@@ -32,6 +32,10 @@ let ProductsController = class ProductsController {
         await this.productsService.importFoods(data);
         return { message: 'Foods imported successfully' };
     }
+    async deleteFoods() {
+        await this.productsService.deleteAllFoods();
+        return { message: 'Foods imported successfully' };
+    }
 };
 exports.ProductsController = ProductsController;
 __decorate([
@@ -51,6 +55,12 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], ProductsController.prototype, "importFoods", null);
+__decorate([
+    (0, common_1.Delete)('delete'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], ProductsController.prototype, "deleteFoods", null);
 exports.ProductsController = ProductsController = __decorate([
     (0, common_1.Controller)('products'),
     __metadata("design:paramtypes", [products_service_1.ProductsService, profile_service_1.ProfileService])

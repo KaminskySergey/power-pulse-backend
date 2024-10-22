@@ -23,4 +23,7 @@ export declare class ProductsController {
     importFoods(data: any): Promise<{
         message: string;
     }>;
+    deleteFoods(): Promise<{
+        message: string;
+    }>;
 }

@@ -37,7 +37,6 @@ export class ProductsService {
         where: filters,
       }),
     };
-   
   }
 
   async importFoods(data: any) {
@@ -49,6 +48,11 @@ export class ProductsService {
       });
     }
   }
+
+  async deleteAllFoods() {
+    await this.prisma.products.deleteMany();
+  }
+  
   private createFilter(
     dto?: ProductDto,
     profileBlood?: number,
@@ -86,17 +90,17 @@ export class ProductsService {
 
   private getCategoryFilter(category: string): Prisma.ProductsWhereInput {
     const formattedCategory = category.replace(/-/g, ' ');
-  return {
-    OR: [
-      {
-        category: {
-          contains: formattedCategory,
-          mode: 'insensitive',
+    return {
+      OR: [
+        {
+          category: {
+            contains: formattedCategory,
+            mode: 'insensitive',
+          },
         },
-      },
-    ],
-  };
-}
+      ],
+    };
+  }
 
   private getBloodGroupFilter(
     allowed: string,

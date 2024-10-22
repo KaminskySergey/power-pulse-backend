@@ -33,5 +33,11 @@ export class ProductsController {
     await this.productsService.importFoods(data);
     return { message: 'Foods imported successfully' };
   }
+
+  @Delete('delete')
+  async deleteFoods() {
+    await this.productsService.deleteAllFoods();
+    return { message: 'Foods imported successfully' };
+  }
   
 }

@@ -46,6 +46,9 @@ let ProductsService = class ProductsService {
             });
         }
     }
+    async deleteAllFoods() {
+        await this.prisma.products.deleteMany();
+    }
     createFilter(dto, profileBlood) {
         const filters = [];
         if (dto?.searchTerm) {
