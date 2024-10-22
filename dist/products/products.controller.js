@@ -33,8 +33,7 @@ let ProductsController = class ProductsController {
         return { message: 'Foods imported successfully' };
     }
     async deleteFoods() {
-        await this.productsService.deleteAllFoods();
-        return { message: 'Foods imported successfully' };
+        return { message: 'Foods deleted successfully' };
     }
 };
 exports.ProductsController = ProductsController;

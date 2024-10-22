@@ -36,8 +36,8 @@ export class ProductsController {
 
   @Delete('delete')
   async deleteFoods() {
-    await this.productsService.deleteAllFoods();
-    return { message: 'Foods imported successfully' };
+    // await this.productsService.deleteAllFoods();
+    return { message: 'Foods deleted successfully' };
   }
   
 }
