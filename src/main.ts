@@ -11,7 +11,7 @@ async function bootstrap() {
   app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
 
   app.enableCors({
-    origin: ['https://power-pulse-six.vercel.app', 'http://localhost:3000'],
+    origin: ['https://power-pulse-ten.vercel.app', 'http://localhost:3000'],
     credentials: true,
     exposedHeaders: 'set-cookie',
   });
